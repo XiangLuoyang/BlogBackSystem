@@ -16,5 +16,8 @@ var questions = [{
         age: "666"
     }
 ];
+app.use(req,res,back){
+    
+}
 
 module.exports=questions;

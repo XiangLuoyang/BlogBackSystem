@@ -21,7 +21,7 @@ app.all('*', function (req, res, next) {
     else next();
 });
 
-//引入API 1 question的json
+// 引入API 1 question的json
 var questions=require('./data/questions');
 //写个接口123
 app.get('/123',function(req,res){
