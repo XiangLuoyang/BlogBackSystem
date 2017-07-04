@@ -7,26 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var conn = require('./data/connect');
 var app = express();
-
-//连接数据库
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '123456',
-    database:'blog'
-});
-
-connection.connect();
-//查询
-connection.query('select * from `mytable`', function(err, rows, fields) {
-    if (err) throw err;
-    console.log('查询结果为: ', rows);
-});
-//关闭连接
-connection.end();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
