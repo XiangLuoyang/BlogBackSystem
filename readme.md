@@ -15,16 +15,16 @@
 
 先出个小样
 ```
-┌ bin
+┌── bin
 │
-├ data          用于放置控制数据的js文件，通常用于数据库的连接和创建APIs
-│    └ db       放置sql控制语句，直接操控database
+├── data          用于放置控制数据的js文件，通常用于数据库的连接和创建APIs
+│    └── db       放置sql控制语句，直接操控database
 │    
-├ public        
+├── public        
 │
-├ routes        路由文件
+├── routes        路由文件
 │
-└ views
+└── views
 ```
 
 ## Next TODO:
