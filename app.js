@@ -22,11 +22,11 @@ app.all('*', function (req, res, next) {
 });
 
 // 引入API 1 question的json
-var questions=require('./data/questions');
+var userInfo=require('./data/userInfo');
 //写个接口123
-app.get('/123',function(req,res){
+app.get('/getUserInfo',function(req,res){
 res.status(200),
-res.json(questions)
+res.json(userInfo)
 });
 
 

@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var questions = [{
+var userInfo = [{
         data: 213,
         num: 444,
         age: 12
@@ -16,8 +16,5 @@ var questions = [{
         age: "666"
     }
 ];
-app.use(req,res,back){
-    
-}
 
-module.exports=questions;
+module.exports = userInfo;
