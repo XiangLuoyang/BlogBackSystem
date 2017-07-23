@@ -1,3 +1,4 @@
+// 注意：要调用接口时接入以下网址，如：localhost:8080/users/getALl
 var express = require('express');
 var router = express.Router();
 // 导入MySQL模块
@@ -91,13 +92,14 @@ router.get('/getAll', function (req, res, next) {
       if (result) {
         result = {
           code: 200,
-          msg: '查询成功'
+          msg: '查询成功',
+          data: result
         };
       }
       //以json形式，把操作结果返回给前台页面
       responseJSON(res, result);
       //释放连接
-      connect.release();
+      connection.release();
     });
   });
 });
